@@ -1,11 +1,7 @@
 @use '../utils//variables' as variables;
 
 section {
-    form {
-        background-color: variables.$info;
-        .divButtons button {
-            background-color: white !important;
-        }
+    article {
+        width: 400px;
     }
-       
 }
