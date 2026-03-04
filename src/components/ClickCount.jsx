@@ -1,12 +1,10 @@
 import { useRef } from "react";
 
 export default function ClickCount() {
-  const ref = useRef(0);
+  const buttonRef = useRef(null);
+  console.log(buttonRef.current);
 
-  const handleClick = () => {
-    ref.current = ref.current + 1;
-    alert(`Vous avez cliqué ${ref.current} fois`);
-  };
+  buttonRef.current.innerText = 'Enregistrer';
 
-  return <button onClick={handleClick}>Click</button>;
+  return <button ref={buttonRef}>Click</button>;
 }
